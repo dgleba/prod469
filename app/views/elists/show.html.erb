@@ -1,0 +1,19 @@
+
+<p>
+  <strong>Email:</strong>
+  <%= @elist.email %>
+</p>
+
+<p>
+  <strong>Active status:</strong>
+  <%= @elist.active_status %>
+</p>
+
+<p>
+  <strong>Sort order:</strong>
+  <%= @elist.sort_order %>
+</p>
+
+<br>
+<%= link_to 'Edit', edit_elist_path(@elist), class: "btn btn-primary", :style=>'color:#FFFFFF;' %> &nbsp &nbsp
+<%= link_to 'Back', elists_path, class: "btn btn-default" %>

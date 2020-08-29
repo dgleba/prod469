@@ -1,0 +1,29 @@
+
+<p>
+  <strong>When to send:</strong>
+  <%= @elist_report.when_to_send %>
+</p>
+
+<p>
+  <strong>Elist:</strong>
+  <%= @elist_report.elist %>
+</p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @elist_report.report %>
+</p>
+
+<p>
+  <strong>Active status:</strong>
+  <%= @elist_report.active_status %>
+</p>
+
+<p>
+  <strong>Sort order:</strong>
+  <%= @elist_report.sort_order %>
+</p>
+
+<br>
+<%= link_to 'Edit', edit_elist_report_path(@elist_report), class: "btn btn-primary", :style=>'color:#FFFFFF;' %> &nbsp &nbsp
+<%= link_to 'Back', elist_reports_path, class: "btn btn-default" %>

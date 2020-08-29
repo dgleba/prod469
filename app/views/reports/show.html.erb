@@ -1,0 +1,19 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @report.name %>
+</p>
+
+<p>
+  <strong>Active status:</strong>
+  <%= @report.active_status %>
+</p>
+
+<p>
+  <strong>Sort order:</strong>
+  <%= @report.sort_order %>
+</p>
+
+<br>
+<%= link_to 'Edit', edit_report_path(@report), class: "btn btn-primary", :style=>'color:#FFFFFF;' %> &nbsp &nbsp
+<%= link_to 'Back', reports_path, class: "btn btn-default" %>
